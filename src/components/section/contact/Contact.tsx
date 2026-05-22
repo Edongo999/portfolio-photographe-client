@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaLinkedin } from "react-icons/fa";
-import { CheckCircleIcon, XCircleIcon } from "@heroicons/react/24/solid";
+import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { PhoneIcon, MapPinIcon, CheckCircleIcon, XCircleIcon } from "@heroicons/react/24/solid";
 import Confetti from "react-confetti";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
@@ -37,8 +37,6 @@ const Contact = () => {
           throw new Error("Form submission failed");
         }
       } catch (error) {
-        // Utilise la variable pour éviter l'erreur ESLint
-        // Tu peux enlever le console.error en production si tu veux
         console.error("Formspree error:", error);
         setLoading(false);
         setStatus("error");
@@ -47,29 +45,12 @@ const Contact = () => {
     }
   };
 
-  // 🔹 Variants cascade
-  const containerVariants = {
-    hidden: {},
-    visible: { transition: { staggerChildren: 0.3 } }
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: "easeOut" as const }
-    }
-  };
+  const containerVariants = { hidden: {}, visible: { transition: { staggerChildren: 0.3 } } };
+  const itemVariants = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const } } };
 
   return (
-    <section
-      id="contact"
-      className="min-h-screen bg-gray-800 text-white px-6 sm:px-8 pt-12 pb-16 relative"
-    >
-      {showConfetti && (
-        <Confetti recycle={false} numberOfPieces={600} gravity={0.2} wind={0.01} />
-      )}
+    <section id="contact" className="min-h-screen bg-gray-800 text-white px-6 sm:px-8 pt-12 pb-16 relative">
+      {showConfetti && <Confetti recycle={false} numberOfPieces={600} gravity={0.2} wind={0.01} />}
       <div className="w-full max-w-6xl mx-auto space-y-12">
         <div className="flex justify-center">
           <motion.h2
@@ -77,150 +58,82 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: "easeOut" as const }}
             viewport={{ once: true }}
-            className="text-2xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-teal-400 to-blue-400"
+            className="text-3xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-teal-400 to-blue-400"
           >
             {t("contact.title")}
           </motion.h2>
         </div>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.4 }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
-        >
+        <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.4 }} className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* 🔹 Infos de contact */}
-          <motion.div
-            variants={itemVariants}
-            className="bg-gray-900 rounded-lg shadow-lg p-8 space-y-6"
-          >
-            <p className="text-gray-300 text-xl leading-relaxed font-medium">
+          <motion.div variants={itemVariants} className="bg-gray-900 rounded-lg shadow-lg p-8 space-y-6">
+            <p className="text-gray-300 text-lg sm:text-xl leading-relaxed">
               {t("contact.intro")}
             </p>
 
             <div className="space-y-6">
+              {/* Email */}
               <div className="flex items-center gap-4">
                 <FaEnvelope className="w-7 h-7 text-indigo-400" />
-                <a
-                  href={`mailto:${t("contact.email")}`}
-                  className="text-gray-200 text-lg hover:text-indigo-300 transition-colors"
-                >
+                <a href={`mailto:${t("contact.email")}`} className="text-gray-200 text-xl hover:text-indigo-300 transition-colors">
                   {t("contact.email")}
                 </a>
               </div>
-              <div className="flex items-center gap-4">
-                <FaLinkedin className="w-7 h-7 text-blue-500" />
-                <a
-                  href="https://www.linkedin.com/in/miranda-kemta-557788375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-200 text-lg hover:text-blue-400 transition-colors"
-                >
-                  {t("contact.linkedin")}
+
+              {/* Réseaux sociaux */}
+              <div className="flex flex-col md:flex-row md:items-center md:gap-8 mt-4 space-y-4 md:space-y-0">
+                <a href="https://www.facebook.com/tonprofil" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-200 hover:text-indigo-400 transition-colors">
+                  <FaFacebook className="w-7 h-7" />
+                  <span className="text-xl">Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/tonprofil" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-200 hover:text-pink-400 transition-colors">
+                  <FaInstagram className="w-7 h-7" />
+                  <span className="text-xl">Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@tonprofil" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-gray-200 hover:text-gray-100 transition-colors">
+                  <FaTiktok className="w-7 h-7" />
+                  <span className="text-xl">TikTok</span>
                 </a>
               </div>
 
+              {/* Téléphones */}
               <div className="flex items-center gap-4">
-                <FaPhoneAlt className="w-7 h-7 text-indigo-400" />
-                <a
-                  href="https://wa.me/237652491246"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-200 text-lg hover:text-green-400 transition-colors"
-                >
+                <FaWhatsapp className="w-7 h-7 text-green-400" />
+                <a href="https://wa.me/237652491246" target="_blank" rel="noopener noreferrer" className="text-gray-200 text-xl hover:text-green-400 transition-colors">
                   {t("contact.phone")}
                 </a>
               </div>
               <div className="flex items-center gap-4">
-                <FaPhoneAlt className="w-7 h-7 text-indigo-400" />
-                <a
-                  href="https://wa.me/237689363034"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-200 text-lg hover:text-green-400 transition-colors"
-                >
+                <PhoneIcon className="w-7 h-7 text-indigo-400" />
+                <a href="tel:+237689363034" className="text-gray-200 text-xl hover:text-indigo-300 transition-colors">
                   {t("contact.phone1")}
                 </a>
               </div>
+
+              {/* Localisation */}
               <div className="flex items-center gap-4">
-                <FaMapMarkerAlt className="w-7 h-7 text-indigo-400" />
-                <span className="text-gray-200 text-lg">{t("contact.location")}</span>
+                <MapPinIcon className="w-7 h-7 text-indigo-400" />
+                <span className="text-gray-200 text-xl">{t("contact.location")}</span>
               </div>
             </div>
           </motion.div>
 
           {/* 🔹 Formulaire */}
-          <motion.form
-            ref={form}
-            onSubmit={sendEmail}
-            variants={itemVariants}
-            className="bg-gray-900 rounded-lg shadow-lg p-8 space-y-6"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder={t("contact.form.name")}
-              required
-              className="w-full px-4 py-3 rounded-md bg-gray-700 text-white"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder={t("contact.form.email")}
-              required
-              className="w-full px-4 py-3 rounded-md bg-gray-700 text-white"
-            />
-            <input
-              type="text"
-              name="phone"
-              placeholder={t("contact.form.phone")}
-              className="w-full px-4 py-3 rounded-md bg-gray-700 text-white"
-            />
-            <input
-              type="text"
-              name="service"
-              placeholder={t("contact.form.service")}
-              required
-              className="w-full px-4 py-3 rounded-md bg-gray-700 text-white"
-            />
-            <textarea
-              name="details"
-              rows={5}
-              placeholder={t("contact.form.details")}
-              required
-              className="w-full px-4 py-3 rounded-md bg-gray-700 text-white"
-            ></textarea>
+          <motion.form ref={form} onSubmit={sendEmail} variants={itemVariants} className="bg-gray-900 rounded-lg shadow-lg p-8 space-y-6">
+            <input type="text" name="name" placeholder={t("contact.form.name")} required className="w-full px-4 py-3 rounded-md bg-gray-700 text-white text-lg" />
+            <input type="email" name="email" placeholder={t("contact.form.email")} required className="w-full px-4 py-3 rounded-md bg-gray-700 text-white text-lg" />
+            <input type="text" name="phone" placeholder={t("contact.form.phone")} className="w-full px-4 py-3 rounded-md bg-gray-700 text-white text-lg" />
+            <input type="text" name="service" placeholder={t("contact.form.service")} required className="w-full px-4 py-3 rounded-md bg-gray-700 text-white text-lg" />
+            <textarea name="details" rows={5} placeholder={t("contact.form.details")} required className="w-full px-4 py-3 rounded-md bg-gray-700 text-white text-lg"></textarea>
 
-            {/* 🔹 Bouton avec rendu conditionnel */}
-            <button
-              type="submit"
-              disabled={loading}
-              className={`w-full py-3 rounded-md font-semibold flex items-center justify-center gap-2 
-                transition-all duration-500 ease-in-out
-                ${loading ? "bg-indigo-400 cursor-not-allowed" : "bg-indigo-500 hover:bg-indigo-600"} 
-                ${status === "success" ? "bg-green-500" : ""} 
-                ${status === "error" ? "bg-red-500" : ""}`}
-            >
-              {loading && (
-                <span className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
-              )}
-
+            <button type="submit" disabled={loading} className={`w-full py-3 rounded-md font-semibold flex items-center justify-center gap-2 transition-all duration-500 ease-in-out text-lg
+              ${loading ? "bg-indigo-400 cursor-not-allowed" : "bg-indigo-500 hover:bg-indigo-600"} 
+              ${status === "success" ? "bg-green-500" : ""} 
+              ${status === "error" ? "bg-red-500" : ""}`}>
+              {loading && <span className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>}
               {status === "idle" && <span>{t("contact.form.send")}</span>}
-
-              {status === "success" && (
-                <span className="flex items-center gap-2">
-                  <CheckCircleIcon className="w-6 h-6 text-white" />
-                  {t("contact.form.success")}
-                </span>
-              )}
-
-              {status === "error" && (
-                <span className="flex items-center gap-2">
-                  <XCircleIcon className="w-6 h-6 text-white" />
-                  {t("contact.form.error")}
-                </span>
-              )}
+              {status === "success" && <span className="flex items-center gap-2"><CheckCircleIcon className="w-6 h-6 text-white" />{t("contact.form.success")}</span>}
+              {status === "error" && <span className="flex items-center gap-2"><XCircleIcon className="w-6 h-6 text-white" />{t("contact.form.error")}</span>}
             </button>
           </motion.form>
         </motion.div>

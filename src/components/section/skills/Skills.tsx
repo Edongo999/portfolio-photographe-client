@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion, Variants } from "framer-motion";
-import { Megaphone, PenTool, BarChart3, Wrench } from "lucide-react";
+import { Camera, Image, Aperture, Film } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
@@ -33,57 +33,53 @@ const titleVariants: Variants = {
 
 const Skills = () => {
   const { t } = useTranslation();
-  const [touchedIndex, setTouchedIndex] = useState<number | null>(null);
-  const [showMore, setShowMore] = useState(false);
 
   const skills = [
     {
-      icon: Megaphone,
-      title: t("skills.marketing.title"),
+      icon: Camera,
+      title: t("skills.photography.title"),
       items: [
-        t("skills.marketing.item1"),
-        t("skills.marketing.item2"),
-        t("skills.marketing.item3"),
+        t("skills.photography.item1"),
+        t("skills.photography.item2"),
+        t("skills.photography.item3"),
       ],
     },
     {
-      icon: PenTool,
-      title: t("skills.content.title"),
+      icon: Image,
+      title: t("skills.editing.title"),
       items: [
-        t("skills.content.item1"),
-        t("skills.content.item2"),
-        t("skills.content.item3"),
+        t("skills.editing.item1"),
+        t("skills.editing.item2"),
+        t("skills.editing.item3"),
       ],
     },
     {
-      icon: BarChart3,
-      title: t("skills.analysis.title"),
+      icon: Aperture,
+      title: t("skills.technique.title"),
       items: [
-        t("skills.analysis.item1"),
-        t("skills.analysis.item2"),
-        t("skills.analysis.item3"),
+        t("skills.technique.item1"),
+        t("skills.technique.item2"),
+        t("skills.technique.item3"),
       ],
     },
     {
-      icon: Wrench,
-      title: t("skills.other.title"),
+      icon: Film,
+      title: t("skills.storytelling.title"),
       items: [
-        t("skills.other.item1"),
-        t("skills.other.item2"),
-        t("skills.other.item3"),
-        t("skills.other.item4"),
-        t("skills.other.item5"),
+        t("skills.storytelling.item1"),
+        t("skills.storytelling.item2"),
+        t("skills.storytelling.item3"),
       ],
     },
   ];
 
   const cardClassBase =
-    "group rounded-lg p-8 min-h-[300px] space-y-5 text-center bg-white/10 backdrop-blur-md border border-white/10 shadow-md transition duration-300";
+    "group rounded-xl p-8 min-h-[280px] flex flex-col items-center justify-start text-center bg-black/40 backdrop-blur-md border border-white/10 shadow-lg transition duration-300";
   const cardHoverClasses =
-    "cursor-pointer hover:scale-[1.03] hover:bg-gradient-to-br hover:from-purple-500/30 hover:to-indigo-500/30";
+    "cursor-pointer hover:scale-[1.05] hover:shadow-xl hover:bg-black/60";
 
   return (
-    <section id="skills" className="min-h-screen bg-gray-900 text-white px-6 sm:px-8 pt-12 pb-16">
+    <section id="skills" className="min-h-screen bg-gray-800 text-white px-6 sm:px-8 pt-12 pb-16">
       <div className="w-full max-w-6xl mx-auto space-y-10">
         {/* TITLE */}
         <motion.div
@@ -93,7 +89,7 @@ const Skills = () => {
           viewport={{ once: true, amount: 0.6 }}
           className="flex justify-center"
         >
-          <h2 className="text-2xl sm:text-4xl font-bold px-6 py-2 rounded-lg text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 animate-gradient-x">
+          <h2 className="text-2xl sm:text-4xl font-bold px-6 py-2 rounded-lg text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-200 to-violet-500 animate-gradient-x">
             {t("skills.title")}
           </h2>
         </motion.div>
@@ -115,43 +111,32 @@ const Skills = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-4 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
         >
           {skills.map((block, idx) => {
             const Icon = block.icon;
-            const itemsToShow =
-              block.title === t("skills.other.title") && !showMore
-                ? block.items.slice(0, 3)
-                : block.items;
-
             return (
               <motion.div
                 key={idx}
                 variants={itemVariants}
-                className={`${cardClassBase} ${cardHoverClasses} ${
-                  touchedIndex === idx
-                    ? "scale-[1.03] bg-gradient-to-br from-purple-500/30 to-indigo-500/30"
-                    : ""
-                }`}
-                onTouchStart={() =>
-                  setTouchedIndex((prev) => (prev === idx ? null : idx))
-                }
+                className={`${cardClassBase} ${cardHoverClasses}`}
               >
-                <Icon size={36} className="mx-auto text-purple-300" />
-                <h3 className="text-lg font-semibold text-purple-300">{block.title}</h3>
-                <ul className="list-disc list-inside text-gray-200 space-y-2 text-left">
-                  {itemsToShow.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-                {block.title === t("skills.other.title") && (
-                  <button
-                    onClick={() => setShowMore(!showMore)}
-                    className="mt-4 px-4 py-2 rounded-lg bg-purple-500/40 text-white font-semibold hover:bg-purple-600 transition"
-                  >
-                    {showMore ? t("skills.showLess") : t("skills.showMore")}
-                  </button>
-                )}
+                {/* Rond orange avec icône blanche */}
+                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-orange-600 shadow-md mb-4">
+                  <Icon size={28} className="text-white" />
+                </div>
+
+                {/* Titre en orange */}
+                <h3 className="text-lg font-semibold text-orange-400 mb-3">
+                  {block.title}
+                </h3>
+              {/* Liste avec puces alignées */}
+              <ul className="list-disc list-inside text-gray-300 text-base leading-relaxed space-y-3 text-left">
+                {block.items.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+
               </motion.div>
             );
           })}

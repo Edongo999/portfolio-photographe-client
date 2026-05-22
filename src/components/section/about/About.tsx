@@ -1,12 +1,13 @@
+
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import {
-  Palette,
-  BarChart3,
-  Users,
-  Rocket,
-  Handshake,
-  Target,
+  Camera,
+  Image,
+  Aperture,
+  Film,
+  Star,
+  Heart,
   Send
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -32,17 +33,19 @@ const titleVariants: Variants = {
 const About = () => {
   const { t } = useTranslation();
 
-  const values = [
-    { icon: Palette, text: t("about.values.creativity"), color: "bg-purple-700" },
-    { icon: BarChart3, text: t("about.values.impact"), color: "bg-indigo-700" },
-    { icon: Users, text: t("about.values.engagement"), color: "bg-rose-700" },
-    { icon: Rocket, text: t("about.values.innovation"), color: "bg-green-700" },
-    { icon: Handshake, text: t("about.values.teamwork"), color: "bg-yellow-700" },
-    { icon: Target, text: t("about.values.client"), color: "bg-cyan-700" }
-  ];
+const values = [
+  { icon: Camera, text: t("about.values.creativity"), color: "bg-gradient-to-r from-purple-600 to-orange-500" },
+  { icon: Image, text: t("about.values.portfolio"), color: "bg-gradient-to-r from-indigo-600 to-orange-400" },
+  { icon: Aperture, text: t("about.values.technique"), color: "bg-gradient-to-r from-rose-600 to-orange-400" },
+  { icon: Film, text: t("about.values.storytelling"), color: "bg-gradient-to-r from-green-600 to-orange-400" },
+  { icon: Star, text: t("about.values.quality"), color: "bg-gradient-to-r from-yellow-500 to-orange-400" },
+  { icon: Heart, text: t("about.values.emotion"), color: "bg-gradient-to-r from-cyan-600 to-orange-400" }
+];
+
+
 
   return (
-    <section id="about" className="min-h-screen bg-gray-800 text-white px-8 pt-12 pb-16">
+    <section id="about" className="min-h-screen bg-gray-900 text-white px-8 pt-12 pb-16">
       <div className="w-full max-w-6xl mx-auto space-y-12">
         {/* TITRE animé */}
         <motion.div
@@ -52,9 +55,13 @@ const About = () => {
           viewport={{ once: true, amount: 0.6 }}
           className="flex justify-center"
         >
-          <h2 className="text-2xl sm:text-4xl font-bold px-6 py-2 rounded-lg text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400 animate-gradient-x">
-            {t("about.title")}
-          </h2>
+          <h2 className="text-3xl sm:text-4xl font-bold px-6 py-2 rounded-lg 
+               text-transparent bg-clip-text 
+               bg-gradient-to-r from-orange-600 via-orange-200 to-violet-500 
+               animate-gradient-x">
+  {t("about.title")}
+</h2>
+
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

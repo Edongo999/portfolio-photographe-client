@@ -12,9 +12,9 @@ export default function Navbar() {
   const { t } = useTranslation();
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-purple-800 text-white flex justify-between items-center px-4 md:px-8 py-4 shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full bg-orange-600 text-white flex justify-between items-center px-4 md:px-8 py-4 shadow-md z-50">
       {/* Logo */}
-      <div className="text-2xl font-bold">MK.</div>
+      <div className="text-2xl font-bold">HG.</div>
 
       {/* Menu desktop */}
       <div className="hidden md:flex items-center space-x-8">
@@ -23,7 +23,7 @@ export default function Navbar() {
       </div>
 
       {/* Hamburger mobile */}
-      <div className="md:hidden flex items-center space-x-4 pr-16">
+      <div className="md:hidden flex items-center space-x-8 pr-16">
         <LanguageSelector />
         <button
           onClick={() => setMenuOpen(!menuOpen)}

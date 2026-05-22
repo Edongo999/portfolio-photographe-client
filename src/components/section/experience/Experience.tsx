@@ -10,7 +10,8 @@ interface Experience {
   period: string;
   description: string[];
   tools: string[];
-  certificate?: string; // optionnel
+  certificate?: string;
+  cardId?: string; // 🔹 identifiant pour pointer vers une carte
 }
 
 const Experiences: React.FC = () => {
@@ -29,19 +30,47 @@ const Experiences: React.FC = () => {
       rgba(236,72,153,${p}))`
   );
 
-  // 🔹 Récupération des expériences depuis i18n
   const experiences = (t("experience.items", { returnObjects: true }) as unknown) as Record<string, Experience>;
-
-  // 🔹 État pour le modal
   const [selectedCertificate, setSelectedCertificate] = useState<string | null>(null);
 
   const isPdf = (url: string) => /\.pdf(\?.*)?$/i.test(url);
 
+  
+  const scrollToCard = (cardId?: string | null) => {
+    if (!cardId) return;
+    const el = document.querySelector(`[data-card-id="${cardId}"]`);
+    if (!el) return;
+
+    el.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    el.classList.add(
+      "ring-2",
+      "ring-indigo-400",
+      "shadow-[0_0_30px_rgba(99,102,241,0.7)]",
+      "scale-[1.03]",
+      "rotate-[0.5deg]",
+      "transition-transform",
+      "duration-500",
+      "ease-out"
+    );
+
+    setTimeout(() => {
+      el.classList.remove(
+        "ring-2",
+        "ring-indigo-400",
+        "shadow-[0_0_30px_rgba(99,102,241,0.7)]",
+        "scale-[1.03]",
+        "rotate-[0.5deg]",
+        "transition-transform",
+        "duration-500",
+        "ease-out"
+      );
+    }, 2500);
+  };
+
   return (
     <section id="experiences" className="min-h-screen bg-gray-900 text-white px-6 sm:px-8 pt-12 pb-16">
       <div className="w-full max-w-5xl mx-auto space-y-12">
-        
-        {/* 🔹 Titre principal animé */}
         <div className="flex justify-center">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
@@ -54,7 +83,6 @@ const Experiences: React.FC = () => {
           </motion.h2>
         </div>
 
-        {/* 🔹 Timeline */}
         <div className="relative ml-6 space-y-12">
           <motion.div
             className="absolute left-0 top-0 h-full w-1 origin-top shadow-[0_0_15px_rgba(168,85,247,0.5)]"
@@ -67,7 +95,7 @@ const Experiences: React.FC = () => {
               className="relative pl-8"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2, ease: "easeOut", delay: idx * 0.3 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: idx * 0.2 }}
               viewport={{ once: true, amount: 0.6 }}
             >
               <motion.span
@@ -101,7 +129,6 @@ const Experiences: React.FC = () => {
                   ))}
                 </div>
 
-                {/* 🔹 Bouton Voir le certificat uniquement si exp.certificate existe */}
                 {exp.certificate && (
                   <div className="mt-4">
                     <button
@@ -113,13 +140,24 @@ const Experiences: React.FC = () => {
                     </button>
                   </div>
                 )}
+
+                {exp.cardId && (
+                  <div className="mt-4">
+                    <button
+                      onClick={() => scrollToCard(exp.cardId)}
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-500 transition focus:outline-none focus:ring-2 focus:ring-orange-400"
+                      aria-label={t("experience.viewPhotos")}
+                    >
+                      {t("experience.viewPhotos")}
+                    </button>
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}
         </div>
       </div>
 
-      {/* 🔹 Modal certificat */}
       {selectedCertificate && (
         <ModalPortal onClose={() => setSelectedCertificate(null)}>
           <motion.div

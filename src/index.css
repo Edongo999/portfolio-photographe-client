@@ -7,7 +7,7 @@ html {
 
 body {
   /* Fond gris uniforme pour tout le site */
-  background-color: bg-gray-900; /* équivalent Tailwind bg-gray-800 */
+  background-color: black; /* équivalent Tailwind bg-gray-800 */
   min-height: 100vh;
 }
 
