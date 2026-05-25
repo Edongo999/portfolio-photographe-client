@@ -8,324 +8,510 @@
     "contact": "Contact",
     "close": "Close"
   },
-
-    "hero": {
+  "hero": {
     "greeting": "Hello, I am",
-    "name1": "LEMOUDJI KEMTA",
-    "name2": "MIRANDA",
-    "role1": "Community Manager",
-    "role2": "Content Creator",
-    "description": "I help businesses grow their digital presence and improve visibility through effective marketing strategies. My goal is to create relevant and engaging content while implementing actions that strengthen brand image and foster better interaction with the online community.",
-    "btnProjects": "View my projects",
-    "btnCV": "Download my CV",
+    "name1": "CamFocus",
+    "name2": "JORDAN",
+    "name3": "Photographer",
+    "role1": "Photographer",
+    "description": "I capture unique moments and transform them into images that tell a story. My goal is to reveal the emotion, beauty and authenticity of each moment by creating timeless and elegant visual memories. Through my lens, I offer an artistic experience that enhances details and brings projects to life, whether portraits, events or bespoke visual creations.",
+    "btnPhotos": "Dive into my gallery",
+    "btnContact": "Contact me",
     "linkedinTooltip": "My LinkedIn profile",
-    "imageAlt": "Portrait of Miranda"
+    "facebookTooltip": "My Facebook profile",
+    "instagramTooltip": "My Instagram profile",
+    "tiktokTooltip": "My TikTok profile",
+    "imageAlt": "Portrait of YOKONO SOUKI, photographer"
   },
-
   "about": {
     "title": "About Me",
-    "subtitle": "Who am I?",
-    "intro": "Passionate about digital marketing, I use my creativity and expertise to help businesses strengthen their online visibility. Each project is an opportunity to transform an idea into a dynamic digital strategy capable of capturing attention and creating a real connection with audiences.",
-    "point1": "Designing digital strategies tailored to brand needs.",
-    "point2": "Creating engaging visual and video content for social media.",
-    "point3": "Managing communities to strengthen interaction and loyalty.",
-    "point4": "Analyzing performance to measure impact and optimize campaigns.",
-    "goal": "My goal is to support businesses in their growth by offering modern, effective and sustainable solutions.",
-    "cta": "Let's work together",
-    "valuesTitle": "My Values",
+    "subtitle": "Who am I ?",
+    "intro": "Passionate about photography, I bring my artistic eye and sensitivity to every project. My aim is to transform unique moments into timeless images capable of conveying emotion and telling a story.",
+    "point1": "Capture authentic portraits that reveal personality.",
+    "point2": "Immortalize events to preserve vivid memories.",
+    "point3": "Create elegant and artistic visual compositions.",
+    "point4": "Highlight details and light to enhance every image.",
+    "goal": "My ambition is to offer a unique photographic experience where each shot becomes a precious memory and a work of art.",
+    "cta": "Let's create your project together",
+    "valuesTitle": "My values",
     "values": {
-      "creativity": "Digital Creativity",
-      "impact": "Measurable Impact",
-      "engagement": "Social Engagement",
-      "innovation": "Continuous Innovation",
-      "teamwork": "Teamwork",
-      "client": "Client Focus"
+      "creativity": "Visual creativity",
+      "portfolio": "Inspiring gallery",
+      "technique": "Technical mastery",
+      "storytelling": "Visual storytelling",
+      "quality": "Premium quality",
+      "emotion": "Authentic emotion"
     }
   },
-
   "skills": {
     "title": "My Skills",
-    "intro": "Passionate about digital marketing, I have progressively built a rich and diverse expertise,\ndeveloping strong skills in strategy, content creation and performance analysis,\nwhich today allow me to support businesses in managing their online presence effectively, consistently and sustainably.",
-    "marketing": {
-      "title": "Digital Marketing",
-      "item1": "Social media management",
-      "item2": "Digital strategy",
-      "item3": "Community engagement"
+    "intro": "Through my lens, I seek to capture the authenticity of moments and transform each image into a work that tells a story. My expertise combines creativity, technique and artistic sensitivity to deliver unique and memorable visuals.",
+    "photography": {
+      "title": "Photography",
+      "item1": "Capture expressive portraits",
+      "item2": "Immortalize your events",
+      "item3": "Create artistic compositions"
     },
-    "content": {
-      "title": "Content Creation",
-      "item1": "Visuals & posts",
-      "item2": "Video editing",
-      "item3": "Social publications"
+    "editing": {
+      "title": "Retouching & Post‑production",
+      "item1": "Enhance colors and light",
+      "item2": "Precisely correct details",
+      "item3": "Give a unique atmosphere to each image"
     },
-    "analysis": {
-      "title": "Analysis & Tools",
-      "item1": "Reporting",
-      "item2": "Performance analysis",
-      "item3": "Campaign optimization"
+    "technique": {
+      "title": "Technique & Equipment",
+      "item1": "Mastery of natural and artificial light",
+      "item2": "Expert use of lenses",
+      "item3": "Professional settings for every context"
     },
-    "other": {
-      "title": "Other Skills",
-      "item1": "Graphic design",
-      "item2": "IT maintenance",
-      "item3": "Office administration",
-      "item4": "Customer service",
-      "item5": "Data entry"
+    "storytelling": {
+      "title": "Visual Storytelling",
+      "item1": "Build captivating photo reports",
+      "item2": "Create coherent thematic series",
+      "item3": "Convey emotions through images"
     },
-    "showMore": "Show more",
-    "showLess": "Show less"
+    "showMore": "See more",
+    "showLess": "See less"
   },
-
   "projects": {
-    "title": "My Projects",
-    "intro": "My journey in digital marketing has allowed me to create a wide range of creative projects, including visuals, posters, flyers, logos and social media content, with the constant goal of helping both businesses and individuals communicate effectively and enhance their identity.",
-
+    "title": "My Works",
+    "intro": "My journey in photography and video has allowed me to cover a wide range of events, including weddings, birthdays, baptisms and artistic reports. My constant goal is to immortalize your precious moments through images and films that tell a story, offering you unique and timeless memories.",
     "view": "View",
     "role": "Role",
     "results": "Results",
     "impact": "Impact",
     "tools": "Tools",
-
     "categories": {
-      "entreprise": "Company",
-      "client": "Client"
+      "mariage": "Weddings",
+      "anniversaire": "Birthdays",
+      "portrait": "Portraits",
+      "événement": "Events",
+      "artistique": "Artistic"
     },
-
     "items": {
-        "africanada": {
-            "title": "AFRICANADA Social Media Management",
-            "description": "Complete social media management: visual content creation, post scheduling, and community engagement.",
-            "descriptionLong": "Full management of AFRICANADA’s social media: design of visuals, writing posts, editorial calendar, daily community engagement, and performance tracking. Coordination of promotional campaigns and adaptation of content based on user feedback.",
-            "role": "Community Manager & Executive Assistant",
-            "results": "Increased engagement, improved visibility, and stronger customer interactions.",
-            "impact": "Strengthened brand image and enhanced community loyalty online.",
-            "tools": "Canva Pro, Photoshop, CapCut"
-          },
-
-      "wonder": {
-        "title": "Digital Marketing – CB WONDER Enterprise",
-        "description": "Participation in digital marketing: visuals, competitive analysis, web design, and email campaigns.",
-        "descriptionLong": "Creation of visuals, competitive analysis, basic web integration, and targeted email campaigns.",
-        "role": "Digital Marketing Intern",
-        "results": "Improved digital presence and optimized content.",
-        "impact": "Direct contribution to the company’s visibility and improved consistency of marketing campaigns.",
-        "tools": "Canva Pro"
+      "mariage1": {
+        "title": "Wedding – Preparations & Ceremony",
+        "description": "Capturing the intimate moments of preparation and the ceremony, with full photography of preparations and the couple's moments of complicity.",
+        "role": "Wedding photographer",
+        "results": "Photo album delivered in digital and print format.",
+        "impact": "Timeless memories for the newlyweds and their families.",
+        "tools": "Sony A7 IV, Lightroom",
+        "cardId": "mariage-0"
       },
-
-
-      "horizon": {
-        "title": "Logo Proposals – HORIZON",
-        "description": "Creation of several modern and minimalist logo variations.",
-        "descriptionLong": "Design of multiple graphic proposals to modernize the visual identity.",
-        "role": "Graphic Designer",
-        "results": "Several options delivered to the client.",
-        "impact": "Strengthened the company’s visual identity.",
-        "tools": "Illustrator, Photoshop"
+      "mariage2": {
+        "title": "Wedding – Reception & Party",
+        "description": "Coverage of the reception and party, with photos of speeches, activities and festive moments of the evening.",
+        "role": "Wedding photographer",
+        "results": "Dynamic gallery of the key moments.",
+        "impact": "Highlighting emotions and atmosphere.",
+        "tools": "Canon R5, Photoshop",
+        "cardId": "mariage-1"
       },
-
-      "onglerie": {
-        "title": "Premium Nail Salon Poster",
-        "description": "Elegant poster promoting the salon’s services.",
-        "descriptionLong": "High-end visual design aimed at a feminine audience to reinforce the salon’s premium image.",
-        "role": "Graphic Designer",
-        "results": "Aesthetic and marketing‑optimized poster.",
-        "impact": "Positioned the salon as a local reference.",
-        "tools": "Photoshop, Illustrator"
+      "mariage3": {
+        "title": "Wedding – Couple Portraits",
+        "description": "Artistic photo session of the couple, with posed and natural portraits in chosen settings.",
+        "role": "Photographer",
+        "results": "Artistic photos delivered in high resolution.",
+        "impact": "Showcasing love and complicity.",
+        "tools": "Nikon Z6, Capture One",
+        "cardId": "mariage-2"
       },
-
-      "import": {
-        "title": "Import‑Export China Flyer",
-        "description": "Professional flyer highlighting import‑export services.",
-        "descriptionLong": "Design of a flyer showcasing reliability, speed and security of import‑export services.",
-        "role": "Graphic Designer",
-        "results": "Effective marketing material attracting new clients.",
-        "impact": "Strengthened credibility with partners.",
-        "tools": "Illustrator, Photoshop"
+      "mariage4": {
+        "title": "Wedding – Family & Guests",
+        "description": "Group photos and shots of guests, capturing smiles and shared moments.",
+        "role": "Photographer",
+        "results": "Collective album of loved ones.",
+        "impact": "Precious memories for families.",
+        "tools": "Sony A7 III",
+        "cardId": "mariage-3"
       },
-
-      "gems": {
-        "title": "Gems Immo Flyer",
-        "description": "Professional flyer for on‑site visits.",
-        "descriptionLong": "Design of a flyer highlighting transparency, availability and importance of on‑site visits.",
-        "role": "Graphic Designer",
-        "results": "Improved visibility of company activities.",
-        "impact": "Increased participation in site visits.",
-        "tools": "Illustrator, Photoshop"
+      "mariage5": {
+        "title": "Wedding – Details & Decorations",
+        "description": "Photography of details and decorations, highlighting rings, bouquets, tables and decor.",
+        "role": "Photographer",
+        "results": "Aesthetic gallery of details.",
+        "impact": "Refined memories for the newlyweds.",
+        "tools": "Canon EOS R",
+        "cardId": "mariage-4"
       },
-
-      "multiservices": {
-        "title": "Multi‑Service Entrepreneur Poster",
-        "description": "Professional poster showcasing various services.",
-        "descriptionLong": "Poster presenting administrative assistance, graphic design, copywriting and web content.",
-        "role": "Graphic Designer",
-        "results": "Effective marketing support promoting all services.",
-        "impact": "Increased collaboration requests.",
-        "tools": "Illustrator, Photoshop, InDesign"
+      "mariage6": {
+        "title": "Wedding – Full Reportage",
+        "description": "Complete wedding coverage, with photos from start to finish: preparations, ceremony, reception and party.",
+        "role": "Photographer",
+        "results": "Complete album delivered in a premium box.",
+        "impact": "Comprehensive and timeless memories.",
+        "tools": "Sony A7 IV, Lightroom",
+        "cardId": "mariage-5"
       },
-
-      "concours": {
-        "title": "Contest Poster – Two Candidates",
-        "description": "Personalized poster for two participants.",
-        "descriptionLong": "Poster highlighting photos, background and skills of the candidates.",
-        "role": "Graphic Designer",
-        "results": "Improved visibility with the jury and public.",
-        "impact": "Enhanced presentation of candidates’ profiles.",
-        "tools": "Illustrator, Photoshop, InDesign"
+      "anniversaire1": {
+        "title": "Birthday – Decoration & Atmosphere",
+        "description": "Photos of colorful decorations, balloons and the festive atmosphere.",
+        "role": "Event photographer",
+        "results": "A lively gallery that reflects the joy of the celebration.",
+        "impact": "Warm memories for the host and their family.",
+        "tools": "Canon R6",
+        "cardId": "anniversaire-0"
       },
-
-      "beaute": {
-        "title": "Beauty Care Flyer",
-        "description": "Professional flyer for beauty and wellness services.",
-        "descriptionLong": "Elegant and soothing flyer design with premium visuals.",
-        "role": "Graphic Designer",
-        "results": "More appointments and stronger local reputation.",
-        "impact": "Customer loyalty through aesthetic communication.",
-        "tools": "Photoshop, Illustrator, InDesign"
+      "anniversaire2": {
+        "title": "Birthday – Guest Portraits",
+        "description": "Spontaneous portraits of guests, capturing smiles, dances and friendly exchanges.",
+        "role": "Photographer",
+        "results": "A convivial album of participants.",
+        "impact": "Shared memories among friends and family.",
+        "tools": "Sony A7 III",
+        "cardId": "anniversaire-1"
       },
-
-      "carte": {
-        "title": "Business Card",
-        "description": "Clean and professional business card.",
-        "descriptionLong": "Vector file and color variations for printing.",
-        "role": "Designer",
-        "results": "Successfully distributed during networking events.",
-        "impact": "Strengthened professional image.",
-        "tools": "Illustrator"
+      "anniversaire3": {
+        "title": "Birthday – Key Moments",
+        "description": "Photos of key moments: cake, candles and activities, capturing the energy and joy of guests.",
+        "role": "Photographer",
+        "results": "Gallery of memorable moments.",
+        "impact": "Memorable keepsakes for the host and their loved ones.",
+        "tools": "Canon EOS R",
+        "cardId": "anniversaire-2"
       },
-         "transit": {
-      "title": "FN Transit Flyer",
-      "description": "Promotional flyer for an import and transit company.",
-      "descriptionLong": "Design of a clear and engaging visual highlighting FN Transit’s international transport services. The flyer presents destinations, pricing, and contact details in a professional and accessible way.",
-      "role": "Graphic Designer",
-      "results": "Used by the client to promote services to prospects and partners.",
-      "impact": "Enhanced visibility and strengthened credibility with potential customers.",
-      "tools": "Photoshop, Illustrator"
-    }
+      "portrait1": {
+        "title": "Portrait – Studio",
+        "description": "Studio photo session with posed portraits taken under professional lighting.",
+        "role": "Portrait photographer",
+        "results": "Artistic photos in high resolution.",
+        "impact": "Enhancement of identity and style.",
+        "tools": "Canon EOS R",
+        "cardId": "portrait-0"
+      },
+      "portrait2": {
+        "title": "Portrait – Outdoor",
+        "description": "Outdoor photo session with natural portraits in urban or rural settings.",
+        "role": "Photographer",
+        "results": "Spontaneous and lively gallery.",
+        "impact": "Authentic memories.",
+        "tools": "Sony A7 III",
+        "cardId": "portrait-1"
+      },
+      "portrait3": {
+        "title": "Portrait – Artistic",
+        "description": "Creative and original portraits, experimenting with light, colors and poses.",
+        "role": "Photographer",
+        "results": "Unique and expressive photos.",
+        "impact": "Showcasing personality.",
+        "tools": "Nikon Z6",
+        "cardId": "portrait-2"
+      },
+      "artistique1": {
+        "title": "Art Project – Black & White",
+        "description": "Black and white photo series exploring contrasts and emotions.",
+        "role": "Artistic photographer",
+        "results": "Expressive and timeless gallery.",
+        "impact": "Highlighting photographic art.",
+        "tools": "Canon EOS R",
+        "cardId": "artistique-0"
+      },
+      "artistique2": {
+        "title": "Art Project – Light & Shadow",
+        "description": "Experimentation with light, playing with shadows and highlights for unique portraits.",
+        "role": "Photographer",
+        "results": "Creative and original photos.",
+        "impact": "Artistic exploration of light.",
+        "tools": "Sony A7 IV",
+        "cardId": "artistique-1"
+      },
+      "artistique3": {
+        "title": "Art Project – Colors & Textures",
+        "description": "Colorful and textured photo series exploring vivid colors and textures to create original and expressive compositions.",
+        "role": "Artistic photographer",
+        "results": "Vibrant and modern gallery.",
+        "impact": "Showcasing creativity and originality.",
+        "tools": "Nikon Z6, Lightroom",
+        "cardId": "artistique-2"
+      },
+      "evenement1": {
+        "title": "Event – Professional Fair",
+        "description": "Photo coverage of a professional fair, capturing exchanges and key moments.",
+        "role": "Event photographer",
+        "results": "Album delivered for internal and external communication.",
+        "impact": "Professional memories for the company.",
+        "tools": "Canon EOS R",
+        "cardId": "evenement-0"
+      },
+      "evenement2": {
+        "title": "Event – Local Conference",
+        "description": "Photo report of a conference, highlighting speakers and the audience.",
+        "role": "Photographer",
+        "results": "Complete gallery for media distribution.",
+        "impact": "Showcasing speakers and participants.",
+        "tools": "Sony A7 IV",
+        "cardId": "evenement-1"
+      },
+      "evenement3": {
+        "title": "Event – Beauty Fashion Show",
+        "description": "Video and photos of a beauty fashion show, capturing elegance and creativity of participants.",
+        "role": "Photographer",
+        "results": "Video edit and photo album delivered.",
+        "impact": "Elegant keepsakes for participants.",
+        "tools": "Nikon Z6, Lightroom",
+        "cardId": "evenement-2"
+      }
     }
   },
-
   "media": {
     "prev": "Previous",
     "next": "Next",
     "mute": "Mute",
-    "unmute": "Unmute"
+    "unmute": "Unmute",
+    "play": "Play slideshow",
+    "pause": "Pause"
   },
-
   "modal": {
     "close": "Close"
   },
-  
   "experience": {
-    "title": "My Experience & Training",
-    "viewCertificate": "View certificate",
-    "certificateAlt": "Training certificate",
-    "items": {
-      "africanada": {
-        "role": "Executive Assistant & Community Manager",
-        "company": "AFRICANADA",
-        "location": "Douala, Cameroon (Littoral Region)",
-        "period": "January 2025 – August 2025",
+    "title": "My experiences",
+    "viewPhotos": "View photos",
+    "items": [
+      {
+        "role": "Wedding Photographer",
+        "company": "Sarah & Marc",
+        "location": "Yaoundé",
+        "period": "May 2025",
         "description": [
-          "Strategic planning and agenda management",
-          "Administrative support: handling correspondence, emails, and organizing documents",
-          "Client reception and management of online interactions",
-          "Creation of visuals and video editing for communication",
-          "Social media management: content creation, engagement, and performance tracking"
+          "Complete reportage of the ceremony, capturing every emotion with discretion and sensitivity.",
+          "Photo album delivered in digital format, ensuring timeless memories that can be shared with loved ones."
         ],
-        "tools": ["Facebook Business Suite", "Canva", "Photoshop", "Premiere Pro"],
-        "certificate": "/public/images/certificat2.jpg"
+        "tools": [
+          "Sony A7 IV",
+          "Capture One"
+        ],
+        "cardId": "mariage-0"
       },
-      "hopital": {
-        "role": "Professional IT Intern",
-        "company": "Gyneco-Obstetric and Pediatric Hospital",
-        "location": "Douala, Cameroon (Littoral Region)",
-        "period": "February 2024 – April 2024",
+      {
+        "role": "Portrait Photographer",
+        "company": "Private clients",
+        "location": "Douala",
+        "period": "2024 – 2025",
         "description": [
-          "Diagnosis and troubleshooting issues in Microsoft Word",
-          "Resolving printer and scanner problems",
-          "Data entry management in Excel",
-          "Modem configuration",
-          "Virus removal on staff computers and USB drives"
+          "Portrait series in natural light and studio, highlighting each client's unique personality.",
+          "Professional retouching with Lightroom and Photoshop for a premium gallery-worthy result."
         ],
-        "tools": ["MS Word", "MS Excel", "IT Maintenance"]
+        "tools": [
+          "Canon R5",
+          "Lightroom",
+          "Photoshop"
+        ],
+        "cardId": "portrait-0"
       },
-      "wonder": {
-        "role": "Digital Marketing Intern",
-        "company": "CB WONDER Enterprise",
-        "location": "Douala, Cameroon (Littoral Region)",
-        "period": "June 2023 – August 2023",
+      {
+        "role": "Wedding Photographer",
+        "company": "Julie & Alain",
+        "location": "Yaoundé",
+        "period": "2023",
         "description": [
-          "Managing social media pages (Facebook, Twitter, Instagram)",
-          "Creating visual content and websites",
-          "Competitive analysis and email campaigns"
+          "Coverage of preparations and reception, with special attention to details and moments of complicity.",
+          "Complete album delivered in a premium box, enhancing elegance and sentimental value of the memories."
         ],
-        "tools": ["Facebook", "Twitter", "Instagram", "WordPress", "Mailchimp"]
+        "tools": [
+          "Canon R5",
+          "Lightroom"
+        ],
+        "cardId": "mariage-5"
       },
-      "serveuse": {
-        "role": "Waitress",
-        "company": "B'SSADI Galeries Restaurant",
-        "location": "Douala, Cameroon (Littoral Region)",
-        "period": "June 2020 – September 2020",
+      {
+        "role": "Birthday Photographer",
+        "company": "Nguem Family",
+        "location": "Douala",
+        "period": "December 2024",
         "description": [
-          "Welcoming customers and menu recommendations",
-          "Responding to requests and ensuring satisfaction",
-          "Order management and communication with the kitchen"
+          "Reportage of decorations and key moments, capturing the energy and joy of the celebration.",
+          "Dynamic and festive gallery that allows the host to relive the atmosphere and share moments with guests."
         ],
-        "tools": ["Customer service", "Communication", "Organization"]
+        "tools": [
+          "Sony A7 III"
+        ],
+        "cardId": "anniversaire-0"
       },
-      "marketing": {
-        "role": "Certificate in Digital Marketing",
-        "company": "Professional Training Center of Arts and Crafts",
-        "location": "Douala, Cameroon (Littoral Region)",
-        "period": "2021 – 2022",
-        "description": [],
-        "tools": [],
-        "certificate": "/public/images/certificat1.jpg"
+      {
+        "role": "Portrait Photographer",
+        "company": "Studio Lumière",
+        "location": "Douala",
+        "period": "2023",
+        "description": [
+          "Artistic studio sessions exploring light and poses to create unique images.",
+          "Each portrait is designed to strengthen the client's confidence and visual identity."
+        ],
+        "tools": [
+          "Nikon Z6",
+          "Capture One"
+        ],
+        "cardId": "portrait-2"
       },
-      "maintenance": {
-        "role": "Certificate in IT Maintenance",
-        "company": "Professional Training Center of Arts and Crafts",
-        "location": "Douala, Cameroon (Littoral Region)",
-        "period": "2021 – 2022",
-        "description": [],
-        "tools": []
+      {
+        "role": "Artistic Photographer",
+        "company": "Local Exhibition",
+        "location": "Yaoundé",
+        "period": "2022",
+        "description": [
+          "Black and white photo series exploring contrasts and deep emotions.",
+          "The images were exhibited, enhancing artistic credibility and recognition of the work."
+        ],
+        "tools": [
+          "Canon EOS R"
+        ],
+        "cardId": "artistique-0"
+      },
+      {
+        "role": "Birthday Photographer",
+        "company": "Youth Club",
+        "location": "Douala",
+        "period": "August 2023",
+        "description": [
+          "Coverage of the dance party, capturing the energy and spontaneity of guests.",
+          "Festive album delivered in digital format, allowing participants to relive the atmosphere and share memories."
+        ],
+        "tools": [
+          "Sony A7 IV"
+        ],
+        "cardId": "anniversaire-1"
+      },
+      {
+        "role": "Wedding Photographer",
+        "company": "Paul & Diane",
+        "location": "Yaoundé",
+        "period": "2024",
+        "description": [
+          "Outdoor couple portraits taken in natural settings for an authentic result.",
+          "Artistic high-resolution photos highlighting love and complicity."
+        ],
+        "tools": [
+          "Nikon Z6",
+          "Lightroom"
+        ],
+        "cardId": "mariage-2"
+      },
+      {
+        "role": "Portrait Photographer",
+        "company": "Fashion Agency",
+        "location": "Douala",
+        "period": "2025",
+        "description": [
+          "Creative portraits for catalogs, designed to strengthen models' professional image.",
+          "Advanced retouching in Photoshop for a commercial and aesthetic finish of high quality."
+        ],
+        "tools": [
+          "Canon EOS R",
+          "Photoshop"
+        ],
+        "cardId": "portrait-1"
+      },
+      {
+        "role": "Artistic Photographer",
+        "company": "Visual Arts Festival",
+        "location": "Yaoundé",
+        "period": "2025",
+        "description": [
+          "Color & texture photo series exploring creativity and originality.",
+          "Vibrant gallery exhibited at the festival, increasing visibility and attracting artistic collaborations."
+        ],
+        "tools": [
+          "Nikon Z6",
+          "Lightroom"
+        ],
+        "cardId": "artistique-1"
+      },
+      {
+        "role": "Artistic Photographer",
+        "company": "Creative Gallery",
+        "location": "Douala",
+        "period": "2025",
+        "description": [
+          "Color & texture photo series exhibited locally and presented at artistic events.",
+          "This exhibition broadened the project's visibility and attracted collaborative opportunities."
+        ],
+        "tools": [
+          "Nikon Z6",
+          "Lightroom"
+        ],
+        "cardId": "artistique-2"
+      },
+      {
+        "role": "Event Photographer",
+        "company": "Professional Fair",
+        "location": "Douala",
+        "period": "2024",
+        "description": [
+          "Photo coverage of a professional fair, capturing exchanges and key moments.",
+          "Album delivered for internal and external communication."
+        ],
+        "tools": [
+          "Canon EOS R"
+        ],
+        "cardId": "evenement-0"
+      },
+      {
+        "role": "Event Photographer",
+        "company": "Local Conference",
+        "location": "Yaoundé",
+        "period": "2023",
+        "description": [
+          "Photo reportage of a conference, highlighting speakers and the audience.",
+          "Complete gallery for media distribution."
+        ],
+        "tools": [
+          "Sony A7 IV"
+        ],
+        "cardId": "evenement-1"
+      },
+      {
+        "role": "Event Photographer",
+        "company": "Beauty Fashion Show",
+        "location": "Douala",
+        "period": "2025",
+        "description": [
+          "Video and photos of a beauty fashion show, capturing elegance and creativity of participants.",
+          "Video edit and photo album delivered."
+        ],
+        "tools": [
+          "Nikon Z6",
+          "Lightroom"
+        ],
+        "cardId": "evenement-2"
       }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "intro": "Would you like to immortalize a wedding, a birthday, a portrait or an artistic project? I am available to discuss your ideas and support you in creating visual memories. Contact me via the form or directly by phone or email.",
+    "location": "Douala, Cameroon",
+    "facebook": "My Facebook page",
+    "instagram": "My Instagram profile",
+    "tiktok": "My TikTok account",
+    "email": "camfocusjordan@gmail.com",
+    "phone": "(+237)  659 32 21 37",
+    "phone1": "(+237) 697 50 39 43",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "phone": "Your phone",
+      "service": "Type of photo session",
+      "details": "Describe your project or event...",
+      "send": "Send",
+      "success": "Message sent successfully",
+      "error": "An error occurred"
     }
   },
-
-"contact": {
-  "title": "Contact Me",
-  "intro": "Do you have a project, a question or a collaboration in mind? Feel free to contact me via the form or directly by phone or email. I am available to discuss and respond quickly.",
-  "location": "Douala, Cameroon",
-  "linkedin": "My LinkedIn Profile",
-  "email": "lemoudjimiranda@gmail.com",
-  "phone": "(+237) 652 49 12 46",
-  "phone1": "(+237) 689 36 30 34",
-  "form": {
-    "name": "Your name",
-    "email": "Your email",
-    "phone": "Your phone",
-    "service": "Requested service",
-    "details": "Describe your project...",
-    "send": "Send",
-    "success": "Message sent",
-    "error": "Error"
+  "footer": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "experiences": "Experiences",
+      "contact": "Contact"
+    },
+    "portfolio": "Portfolio of",
+    "company": "E‑Technology",
+    "rights": "All rights reserved",
+    "socials": {
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "tiktok": "TikTok"
+    }
   }
-},
-
-"footer": {
-  "nav": {
-    "home": "Home",
-    "about": "About",
-    "projects": "Projects",
-    "experiences": "Experiences",
-    "contact": "Contact"
-  },
-  "portfolio": "Portfolio of",
-  "company": "E‑Technology",
-  "rights": "All rights reserved"
-}
-
-
-
 }

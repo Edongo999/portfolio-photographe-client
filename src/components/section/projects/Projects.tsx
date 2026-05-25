@@ -1,7 +1,3 @@
-
-
-
-
 import React, { useEffect, useState } from "react";
 import MediaViewer from "@/components/section/projects/MediaViewer";
 import ProjectCard, { Project } from "@/components/ui/ProjectCard";
@@ -30,7 +26,7 @@ const Projects: React.FC = () => {
 
   const revealRef = useReveal({ stagger: 120, mode: "smooth" });
 
-  // Filtrage par catégories
+  // Filtrage par catégories (on garde les valeurs telles qu'elles sont dans les données)
   const validProjects = projects.filter((p) => p && typeof p === "object");
 
   const mariages = validProjects.filter((p) => p.category === "Mariage");
@@ -95,7 +91,7 @@ const Projects: React.FC = () => {
         {/* SECTION MARIAGES */}
         {mariages.length > 0 && (
           <div>
-            <CinematicTitle text="Mariages" />
+            <CinematicTitle textKey="projects.categories.mariage" />
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {mariages.map((project, idx) => (
                 <div
@@ -121,13 +117,12 @@ const Projects: React.FC = () => {
         {/* SECTION ANNIVERSAIRES */}
         {anniversaires.length > 0 && (
           <div>
-            <CinematicTitle text="Anniversaires" />
+            <CinematicTitle textKey="projects.categories.anniversaire" />
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {anniversaires.map((project, idx) => (
                 <div
-                id={project.cardId}
-                key={project.cardId}
-                 
+                  id={project.cardId}
+                  key={project.cardId}
                   className="relative reveal"
                   data-reveal-index={idx}
                 >
@@ -148,7 +143,7 @@ const Projects: React.FC = () => {
         {/* SECTION PORTRAITS */}
         {portraits.length > 0 && (
           <div>
-            <CinematicTitle text="Portraits" />
+            <CinematicTitle textKey="projects.categories.portrait" />
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {portraits.map((project, idx) => (
                 <div
@@ -174,7 +169,7 @@ const Projects: React.FC = () => {
         {/* SECTION EVENEMENTS */}
         {evenements.length > 0 && (
           <div>
-            <CinematicTitle text="Événements" />
+            <CinematicTitle textKey="projects.categories.événement" />
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {evenements.map((project, idx) => (
                 <div
@@ -200,7 +195,7 @@ const Projects: React.FC = () => {
         {/* SECTION ARTISTIQUE */}
         {artistiques.length > 0 && (
           <div>
-            <CinematicTitle text="Projets artistiques" />
+            <CinematicTitle textKey="projects.categories.artistique" />
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               {artistiques.map((project, idx) => (
                 <div
