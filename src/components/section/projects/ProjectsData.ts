@@ -70,11 +70,9 @@ export const useProjectsData = (): Project[] => {
         { type: "image", src: "/images/Mariage3/mariage39.webp" },
         { type: "image", src: "/images/Mariage3/mariage301.webp" },
         { type: "image", src: "/images/Mariage3/mariage302.webp" },
-        { type: "image", src: "/images/Mariage3/mariage303.webp" },
         { type: "image", src: "/images/Mariage3/mariage304.webp" },
         { type: "image", src: "/images/Mariage3/mariage305.webp" },
         { type: "image", src: "/images/Mariage3/mariage306.webp" },
-        { type: "image", src: "/images/Mariage3/mariage307.webp" },
         { type: "image", src: "/images/Mariage3/mariage308.webp" },
         { type: "image", src: "/images/Mariage3/mariage309.webp" },
         { type: "image", src: "/images/Mariage3/mariage310.webp" },
@@ -197,7 +195,7 @@ export const useProjectsData = (): Project[] => {
       results: t("projects.items.portrait3.results"),
       medias: [
         { type: "image", src: "/images/Portrait3/portrait30.webp" },
-        { type: "image", src: "/images/Portrait3/portrait31.webp" },
+        { type: "image", src: "/images/Portrait3/portrait31.webp" },  
         { type: "image", src: "/images/Portrait3/portrait32.webp" },
         { type: "image", src: "/images/Portrait3/portrait33.webp" },
         { type: "image", src: "/images/Portrait3/portrait34.webp" },
@@ -231,7 +229,6 @@ export const useProjectsData = (): Project[] => {
       medias: [
        { type: "image", src: "/images/Artistique2/artistique20.webp" },
         { type: "image", src: "/images/Artistique2/artistique21.webp" },
-        { type: "image", src: "/images/Artistique2/artistique22.webp" },
         { type: "image", src: "/images/Artistique2/artistique23.webp" },
         { type: "image", src: "/images/Artistique2/artistique24.webp" },
         { type: "image", src: "/images/Artistique2/artistique25.webp" },
