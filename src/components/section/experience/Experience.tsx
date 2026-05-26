@@ -69,7 +69,7 @@ const Experiences: React.FC = () => {
   };
 
   return (
-    <section id="experiences" className="min-h-screen bg-gray-900 text-white px-6 sm:px-8 pt-12 pb-16">
+    <section id="experiences" className="min-h-screen bg-gray-800 text-white px-6 sm:px-8 pt-12 pb-16">
       <div className="w-full max-w-5xl mx-auto space-y-12">
         <div className="flex justify-center">
           <motion.h2
@@ -77,7 +77,7 @@ const Experiences: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="text-2xl sm:text-4xl font-bold inline-block px-6 py-2 rounded-lg text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400"
+            className="text-2xl sm:text-4xl font-bold px-6 py-2 rounded-lg text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-orange-200 to-violet-500 animate-gradient-x"
           >
             {t("experience.title")}
           </motion.h2>
@@ -106,7 +106,7 @@ const Experiences: React.FC = () => {
                 className="absolute left-[-14px] top-2 w-6 h-6 bg-indigo-500 rounded-full border-4 border-gray-900 shadow-[0_0_10px_rgba(99,102,241,0.6)]"
               ></motion.span>
               
-              <div className="bg-gray-800 border border-gray-700 rounded-lg shadow-md p-6 hover:scale-[1.01] transition-transform">
+              <div className="bg-gray-900 border border-gray-700 rounded-lg shadow-md p-6 hover:scale-[1.01] transition-transform">
                 <h3 className="text-xl font-semibold text-indigo-300">{exp.role}</h3>
                 <p className="text-gray-400 text-sm italic">
                   {exp.company} • {exp.location} • {exp.period}

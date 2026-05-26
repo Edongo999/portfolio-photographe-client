@@ -58,7 +58,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: "easeOut" as const }}
             viewport={{ once: true }}
-            className="text-3xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-teal-400 to-blue-400"
+            className="text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-teal-400 to-blue-400"
           >
             {t("contact.title")}
           </motion.h2>
@@ -120,11 +120,11 @@ const Contact = () => {
 
           {/* 🔹 Formulaire */}
           <motion.form ref={form} onSubmit={sendEmail} variants={itemVariants} className="bg-gray-900 rounded-lg shadow-lg p-8 space-y-6">
-            <input type="text" name="name" placeholder={t("contact.form.name")} required className="w-full px-4 py-3 rounded-md bg-gray-700 text-white text-lg" />
-            <input type="email" name="email" placeholder={t("contact.form.email")} required className="w-full px-4 py-3 rounded-md bg-gray-700 text-white text-lg" />
-            <input type="text" name="phone" placeholder={t("contact.form.phone")} className="w-full px-4 py-3 rounded-md bg-gray-700 text-white text-lg" />
-            <input type="text" name="service" placeholder={t("contact.form.service")} required className="w-full px-4 py-3 rounded-md bg-gray-700 text-white text-lg" />
-            <textarea name="details" rows={5} placeholder={t("contact.form.details")} required className="w-full px-4 py-3 rounded-md bg-gray-700 text-white text-lg"></textarea>
+            <input type="text" name="name" placeholder={t("contact.form.name")} required className="w-full px-4 py-3 rounded-md bg-gray-800 text-white text-lg" />
+            <input type="email" name="email" placeholder={t("contact.form.email")} required className="w-full px-4 py-3 rounded-md bg-gray-800 text-white text-lg" />
+            <input type="text" name="phone" placeholder={t("contact.form.phone")} className="w-full px-4 py-3 rounded-md bg-gray-800 text-white text-lg" />
+            <input type="text" name="service" placeholder={t("contact.form.service")} required className="w-full px-4 py-3 rounded-md bg-gray-800 text-white text-lg" />
+            <textarea name="details" rows={5} placeholder={t("contact.form.details")} required className="w-full px-4 py-3 rounded-md bg-gray-800 text-white text-lg"></textarea>
 
             <button type="submit" disabled={loading} className={`w-full py-3 rounded-md font-semibold flex items-center justify-center gap-2 transition-all duration-500 ease-in-out text-lg
               ${loading ? "bg-indigo-400 cursor-not-allowed" : "bg-indigo-500 hover:bg-indigo-600"} 

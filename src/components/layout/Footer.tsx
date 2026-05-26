@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="text-center md:text-right space-y-1">
           <p className="text-sm text-gray-400">
             {t("footer.portfolio")}{" "}
-            <span className="font-semibold text-gray-100">HG FRANCK STUDIO </span>
+            <span className="font-semibold text-gray-100">HG JORDAN STUDIO </span>
           </p>
           <p className="text-sm text-gray-500">
             © {new Date().getFullYear()}{" "}
