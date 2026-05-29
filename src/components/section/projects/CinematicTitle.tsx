@@ -10,7 +10,7 @@ interface CinematicTitleProps {
 
 export default function CinematicTitle({ textKey, imageUrl, className }: CinematicTitleProps) {
   const { t } = useTranslation();
-  const bg = imageUrl ?? "/images/fumée.jfif";
+  const bg = imageUrl ?? "/images/fumée.webp";
 
   return (
     <div

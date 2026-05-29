@@ -127,7 +127,7 @@ const Contact = () => {
             <textarea name="details" rows={5} placeholder={t("contact.form.details")} required className="w-full px-4 py-3 rounded-md bg-gray-800 text-white text-lg"></textarea>
 
             <button type="submit" disabled={loading} className={`w-full py-3 rounded-md font-semibold flex items-center justify-center gap-2 transition-all duration-500 ease-in-out text-lg
-              ${loading ? "bg-indigo-400 cursor-not-allowed" : "bg-indigo-500 hover:bg-indigo-600"} 
+              ${loading ? "bg-indigo-400 cursor-not-allowed" : "bg-red-500 hover:bg-indigo-600"} 
               ${status === "success" ? "bg-green-500" : ""} 
               ${status === "error" ? "bg-red-500" : ""}`}>
               {loading && <span className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>}
